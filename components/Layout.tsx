@@ -1,12 +1,35 @@
-import React from 'react'
+import React,{ ReactNode} from 'react'
+import Link from 'next/link'
+import Head from 'next/head'
 
+type Props = {
+    children?: ReactNode
+    title?: string
+}
 
-const Layout = () => {
-    return (
+const Layout = ({ children, title = 'Seiwa Blog' }: Props)=> (
+
        <div>
-           
+           <Head>
+               <title>{title}</title>
+               <meta charSet="utf-8" />
+               <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+           </Head>
+           <header>
+               <div>
+                   <a className ="logo"></a>
+                   <div className="Contact"><a href=""></a></div>
+               </div>
+           </header>
+           <nav>
+               <div className="">
+                    <Link href="/"><a>Home</a></Link>
+                    <Link href="/"><a>Works</a></Link>
+                    <Link href="/"><a>Blog</a></Link>
+               </div>
+               </nav>
+           <footer></footer>
        </div>
     )
-}
 
 export default Layout
