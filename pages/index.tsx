@@ -4,7 +4,9 @@ import Layout from '../components/Layout'
 
 export default function Home() {
   return (
-      <Layout title="Home | Seiwa Blog"></Layout>
+      <Layout title="Home | Seiwa Blog">
+        <p>hello</p>
+      </Layout>
 
   )
 }

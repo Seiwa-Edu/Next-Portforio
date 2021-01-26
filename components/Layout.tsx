@@ -17,16 +17,18 @@ const Layout = ({ children, title = 'Seiwa Blog' }: Props)=> (
                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
            </Head>
            <header className={header_css.header}>
-               <div>
-                   <a className ="logo"></a>
-                   <div className="Contact"><a href=""></a></div>
+               <div className={header_css.header__wrap}>
+               　　<div className={header_css.header__slide}>
+                        <Link href="/"><a className ="logo">Seiwa Blog</a></Link>
+                        <div className="Contact"><Link href="/"><a className={header_css.header__contact}>Contact</a></Link></div>
+                   </div>
                </div>
            </header>
-           <nav>
+           <nav className={header_css.navi}>
                <div className="">
-                    <Link href="/"><a>Home</a></Link>
-                    <Link href="/"><a>Works</a></Link>
-                    <Link href="/"><a>Blog</a></Link>
+                    <Link href="/"><a className={header_css.navi_a}>Home</a></Link>
+                    <Link href="/works"><a className={header_css.navi_a}>Works</a></Link>
+                    <Link href="/blog"><a className={header_css.navi_a}>Blog</a></Link>
                </div>
                </nav>
            <footer></footer>
