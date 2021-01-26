@@ -30,9 +30,13 @@ const Layout = ({ children, title = 'Seiwa Blog' }: Props)=> (
                     <Link href="/works"><a className={header_css.navi_a}>Works</a></Link>
                     <Link href="/blog"><a className={header_css.navi_a}>Blog</a></Link>
                </div>
-               </nav>
+            </nav>
+            <main>{children}</main>
            <footer></footer>
        </div>
     )
 
 export default Layout
+
+//Layout Component参考
+//https://github.com/vercel/next.js/blob/canary/examples/blog-starter-typescript/components/layout.tsx

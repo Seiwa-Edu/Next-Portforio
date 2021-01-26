@@ -2,21 +2,23 @@ import Link from 'next/link'
 import Layout from '../components/Layout'
 import { GetStaticProps } from 'next'
 import { TableBody } from '@material-ui/core'
-import React from 'react';
+import { NextPage } from 'next';
+import * as React from 'react';
+import { Blog } from '../src/types';
 
 type Props = {
-  id: number;
-  title: string;
-  body: string;
+  blog: Blog[];
 }
 
-//ここに原因があるかな？blogsの渡し方
-const BlogPage = ({blogs}) => (
+//アロー演算子を使った関数の書き方
+// const BlogPage = ({blogs}) => (
+  const BlogsPage: NextPage<Props> = ({ blog }) => {
+    return (
     <Layout title="Blog | Seiwa Blog">
       <div>
         <div>
           {/* カード要素 */}
-          { blogs.map(blog => (
+          { blog.map(blog => (
               <div className="card">
                   <div className="card__imgframe"></div>
                   <div className="card__textbox">
@@ -33,7 +35,9 @@ const BlogPage = ({blogs}) => (
         </div>
       </div>
     </Layout>
-  )
+  // )
+  );
+};
   
     // APIキーの取得
     //  export async function getStaticProps(context) {
@@ -54,4 +58,4 @@ const BlogPage = ({blogs}) => (
     };
   };
 
-  export default BlogPage
+  export default BlogsPage
