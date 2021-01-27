@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Layout from '../components/Layout'
 import { GetStaticProps } from 'next'
-import { TableBody } from '@material-ui/core'
+// import { TableBody } from '@material-ui/core'
 import { NextPage } from 'next';
 import * as React from 'react';
 import { Blog } from '../src/types';
