@@ -22,6 +22,10 @@
   padding: 0.6em 1.5em;
   color: white;
   border-radius: 0.45em;
+  transition: background-color 0.5s;
+}
+.header__contact:hover {
+  background-color: #eb8c39;
 }
 
 .navi {
@@ -40,6 +44,11 @@
   padding: 0.5rem 0;
   color: #c3aca3;
   text-decoration: none;
+  transition: color 0.5s;
+}
+
+.navi_a:hover {
+  color: black;
 }
 
 .nav__wrap {
