@@ -5,6 +5,7 @@ import { TableBody } from '@material-ui/core'
 import { NextPage } from 'next';
 import * as React from 'react';
 import { Blog } from '../src/types';
+import blog_css from '../styles/blog.module.css'
 
 type Props = {
   blog: Blog[];
@@ -16,16 +17,16 @@ type Props = {
     return (
     <Layout title="Blog | Seiwa Blog">
       <div>
-        <div>
+        <div className={blog_css.card__component}>
           {/* カード要素 */}
           { blog.map(blog => (
-              <div className="card">
-                  <div className="card__imgframe"></div>
-                  <div className="card__textbox">
-                    <div className="card__titletext">
+              <div className={blog_css.card}>
+                  <div className={blog_css.card__imgframe}><img src={blog.image.url} className={blog_css.card__image}/></div>
+                  <div className={blog_css.card__textbox}>
+                    <div className={blog_css.card__titletext}>
                       <p>{blog.title}</p>
                     </div>
-                    <div className="card__overviewtext">
+                    <div className={blog_css.card__overviewtext}>
                       <p>{blog.body}</p>
                     </div>
                   </div>
