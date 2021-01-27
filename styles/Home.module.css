@@ -2,6 +2,9 @@ body {
   min-width: 320px;
 }
 
+* {
+  box-sizing: inherit;
+}
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
