@@ -1,3 +1,7 @@
+body {
+  min-width: 320px;
+}
+
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -80,7 +84,7 @@
   margin-top: 3rem;
 }
 
-.card {
+/* .card {
   margin: 1rem;
   flex-basis: 45%;
   padding: 1.5rem;
@@ -108,7 +112,7 @@
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
-}
+} */
 
 .logo {
   height: 1em;

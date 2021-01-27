@@ -16,10 +16,11 @@ type Props = {
   const BlogsPage: NextPage<Props> = ({ blog }) => {
     return (
     <Layout title="Blog | Seiwa Blog">
-      <div>
+      <div className={blog_css.cardlayout__wrap}>
         <div className={blog_css.card__component}>
           {/* カード要素 */}
           { blog.map(blog => (
+            <a href="#"　className={blog_css.card__link} >
               <div className={blog_css.card}>
                   <div className={blog_css.card__imgframe}><img src={blog.image.url} className={blog_css.card__image}/></div>
                   <div className={blog_css.card__textbox}>
@@ -31,6 +32,7 @@ type Props = {
                     </div>
                   </div>
               </div>
+              </a>
           ))}
           {/* カード要素 */}
         </div>

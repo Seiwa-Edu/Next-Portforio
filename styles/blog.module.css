@@ -1,48 +1,107 @@
 /* card */
+/* https://junjun-web.net/css/3column-cardlayout/ */
 
 .card__component {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -ms-flex-pack: justify;
+  margin: 2em auto;
+  max-width: 960px;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
 }
+.card__link {
+  text-decoration: none;
+  margin-bottom: 40px;
+}
+
 .card {
-  width: 288px;
+  /* width: 33%;
   height: auto;
+  height: 600px;
+  overflow: hidden; */
   border-radius: 8px;
-  overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .card__imgframe {
-  width: 100%;
-  height: auto;
-  padding-top: 56.25%;
-  background: #bbb;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .card__image {
-  object-fit: contain;
+  /* object-fit: cover;
+  width: 200px;
+  height: 200px; */
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-.card__textbox {
+/* .card__textbox {
   width: 100%;
   height: auto;
   padding: 20px 18px;
   background: #fff;
   box-sizing: border-box;
-}
+} */
 
-.card__textbox > * + * {
+/* .card__textbox > * + * {
   margin-top: 10px;
-}
+} */
 
-.card__titletext {
-  font-size: 20px;
+.card__titletext p {
+  /* font-size: 20px;
   font-weight: bold;
-  line-height: 125%;
+  line-height: 125%; */
+  margin: 0.6em 0 0;
+  color: #333;
+  text-align: center;
+  font-size: 1.8em;
 }
 
-.card__overviewtext {
-  font-size: 12px;
-  line-height: 150%;
+.card__overviewtext p {
+  /* font-size: 12px;
+  line-height: 150%; */
+  margin: 0;
+  padding: 1em;
+  color: #818181;
+}
+
+/* 折り返し要素 */
+/* カードレイアウトを1カラムで配置 */
+.card__component {
+  margin: 0.5em auto;
+  padding: 0;
+  width: 100%;
+  /* background: #f0f0f0; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* 画面幅768px以上の場合カードレイアウトを2カラムで配置 */
+@media all and (min-width: 768px) {
+  .card__component {
+    margin: 0.5em 0;
+    width: calc(100% / 2); /* 100%幅を2で割るという指定 */
+  }
+}
+
+/* 画面幅992px以上の場合カードレイアウトを3カラムで配置 */
+@media all and (min-width: 992px) {
+  .card__component {
+    width: calc(100% / 3); /* 100%幅を3で割るという指定 */
+  }
+
+  /* 最後の行が3列より少ない場合左寄せにレイアウトさせる */
+  .cardlayout__wrap::after {
+    content: "";
+    display: block;
+    width: calc(100% / 3);
+  }
 }

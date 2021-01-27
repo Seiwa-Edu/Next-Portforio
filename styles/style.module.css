@@ -1,0 +1,38 @@
+.intro_section {
+  padding: 3rem 0 1.5rem;
+}
+
+.intro__wrapper {
+  padding: 0 40px;
+}
+
+.intro__content {
+  display: flex;
+  width: 100%;
+}
+
+.intro__image {
+  width: 50%;
+}
+
+.intro__code {
+  width: 100%;
+}
+
+.intro__textBox {
+  width: 50%;
+}
+
+/* 資格やスキルのセクション */
+
+.skill_section {
+  background-color: #fff1de;
+}
+
+/* 仕事関連のセクション */
+
+.works_section {
+}
+
+.blog_section {
+}

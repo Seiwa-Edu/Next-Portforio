@@ -1,11 +1,13 @@
 .header {
   width: 100%;
   background-color: white;
+  height: 65px;
 }
 
 .header__wrap {
-  /* max-width: 1200px; */
+  max-width: 1200px;
   padding: 0 40px;
+  align-items: center;
 }
 
 .header__slide {
