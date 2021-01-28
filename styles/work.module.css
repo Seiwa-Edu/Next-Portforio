@@ -1,7 +1,4 @@
-/* card */
-/* https://junjun-web.net/css/3column-cardlayout/ */
-
-.card__component {
+.cardlayout_wrap {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15,68 +12,64 @@
   -webkit-box-pack: justify;
   justify-content: space-between;
 }
-.card__link {
+
+/* リンクテキストの下線を非表示 */
+a.card_link {
   text-decoration: none;
-  margin-bottom: 40px;
 }
 
-.card {
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-.card__imgframe {
-  /* box-sizing: border-box; */
-  margin: 0;
-  padding: 0;
-}
-
-.card__image {
+/* カードレイアウト内の画像を幅いっぱいに表示 */
+#cardlayout_wrap img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.card__titletext p {
+.card-figure {
+  margin: 0;
+  padding: 0;
+}
+
+/* カードレイアウトのタイトル部分 */
+.card_title {
   margin: 0.6em 0 0;
   color: #333;
   text-align: center;
   font-size: 1.8em;
 }
 
-.card__overviewtext p {
-  /* font-size: 12px;
-  line-height: 150%; */
+/* カードレイアウトの説明文部分 */
+.card_text_tax {
   margin: 0;
   padding: 1em;
   color: #818181;
 }
 
-/* 折り返し要素 */
 /* カードレイアウトを1カラムで配置 */
-.card__component {
+.card_list {
   margin: 0.5em auto;
   padding: 0;
-  width: 96%;
+  width: 100%;
+  background: #f0f0f0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
 }
 
 /* 画面幅768px以上の場合カードレイアウトを2カラムで配置 */
 @media all and (min-width: 768px) {
-  .card__component {
+  .card_list {
     margin: 0.5em 0;
-    width: calc(96% / 2); /* 100%幅を2で割るという指定 */
+    width: calc(100% / 2); /* 100%幅を2で割るという指定 */
   }
 }
 
 /* 画面幅992px以上の場合カードレイアウトを3カラムで配置 */
 @media all and (min-width: 992px) {
-  .card__component {
-    width: calc(96% / 3); /* 100%幅を3で割るという指定 */
+  .card_list {
+    width: calc(100% / 3); /* 100%幅を3で割るという指定 */
   }
 
   /* 最後の行が3列より少ない場合左寄せにレイアウトさせる */
-  .cardlayout__wrap::after {
+  #cardlayout_wrap::after {
     content: "";
     display: block;
     width: calc(100% / 3);

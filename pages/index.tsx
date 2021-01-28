@@ -26,7 +26,7 @@ export default function Home() {
               <p>JavaScript React</p>
               <h3>Backend</h3>
               <p>Ruby on Rails</p>
-              <h3>nfrastructure</h3>
+              <h3>infrastructure</h3>
               <p>AWS</p>
             </div>
           </section>
