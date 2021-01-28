@@ -28,7 +28,11 @@ type Props = {
                       <p>{blog.title}</p>
                     </div>
                     <div className={blog_css.card__overviewtext}>
-                      <p>{blog.body}</p>
+                      {/* テキストエリアを返す */}
+                    　　<div dangerouslySetInnerHTML={{
+                            __html: `${blog.body}`,
+                          }}
+                        />
                     </div>
                   </div>
               </div>

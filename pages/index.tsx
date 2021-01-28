@@ -10,10 +10,10 @@ export default function Home() {
           <section className={style_css.intro_section}>
             <div className={style_css.intro__wrapper}>
               <div className={style_css.intro__content}>
-                <div className={style_css.intro__image}><img src="undraw_code_thinking_1jeh.svg" className={style_css.intro__code}/></div>
+                <div className={style_css.intro__image}><img src="" className={style_css.intro__code}/></div>
                 <div className={style_css.intro__textBox}>
-                  <h2>Seiwa Kumagai</h2>
-                  <p>岩手県盛岡市出身。趣味は温泉と二郎と開発。</p>
+                  <h2>Seiwa</h2>
+                  <p>趣味は温泉と二郎と開発。</p>
                 </div>
               </div>
             </div>
@@ -21,6 +21,13 @@ export default function Home() {
           <section className={style_css.skill_section}>
             <div>
               <h2>Skill</h2>
+              <h3>Frontend</h3>
+              <p>HTML/CSS</p>
+              <p>JavaScript React</p>
+              <h3>Backend</h3>
+              <p>Ruby on Rails</p>
+              <h3>nfrastructure</h3>
+              <p>AWS</p>
             </div>
           </section>
           <section className={style_css.works_section}>
