@@ -19,7 +19,7 @@ a.card_link {
 }
 
 /* カードレイアウト内の画像を幅いっぱいに表示 */
-#cardlayout_wrap img {
+.cardlayout_wrap_image {
   display: block;
   max-width: 100%;
   height: auto;
@@ -42,7 +42,7 @@ a.card_link {
 .card_text_tax {
   margin: 0;
   padding: 1em;
-  color: #818181;
+  /* color: #818181; */
 }
 
 /* カードレイアウトを1カラムで配置 */
@@ -50,7 +50,7 @@ a.card_link {
   margin: 0.5em auto;
   padding: 0;
   width: 100%;
-  background: #f0f0f0;
+  /* background: #f0f0f0; */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
 }
 
@@ -58,20 +58,20 @@ a.card_link {
 @media all and (min-width: 768px) {
   .card_list {
     margin: 0.5em 0;
-    width: calc(100% / 2); /* 100%幅を2で割るという指定 */
+    width: calc(96% / 2); /* 100%幅を2で割るという指定 */
   }
 }
 
 /* 画面幅992px以上の場合カードレイアウトを3カラムで配置 */
 @media all and (min-width: 992px) {
   .card_list {
-    width: calc(100% / 3); /* 100%幅を3で割るという指定 */
+    width: calc(96% / 3); /* 100%幅を3で割るという指定 */
   }
 
   /* 最後の行が3列より少ない場合左寄せにレイアウトさせる */
-  #cardlayout_wrap::after {
+  .cardlayout_wrap::after {
     content: "";
     display: block;
-    width: calc(100% / 3);
+    width: calc(96% / 3);
   }
 }

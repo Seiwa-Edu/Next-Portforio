@@ -13,18 +13,22 @@ type Props = {
   const WorksPage: NextPage<Props> = ({ works}) => {
     return (
     <Layout title="Works | Seiwa Blog">
-      <div className={work_css.cardlayout__wrap}>
-        <div className={work_css.card_list}>
+      <div className={work_css.cardlayout_wrap}>
+        
           {/* カード要素 */}
           { works.map(work => (
+            <div className={work_css.card_list}>
             <a href="#"　className={work_css.card__link} >
-              <figure className={work_css.card_figure}><img src="#" /></figure>
-              <h2 className={work_css.card_title}>カードレイアウト1</h2>
-              <p className={work_css.card_text_tax}></p>
+              <figure className={work_css.card_figure}><img src={work.image.url} className={work_css.cardlayout_wrap_image}/></figure>
+              <h2 className={work_css.card_title}>{work.title}</h2>
+              <p className={work_css.card_text_tax}><div dangerouslySetInnerHTML={{
+                            __html: `${work.body}`,
+                          }}
+                        /></p>
             </a>
+            </div>
           ))}
           {/* カード要素 */}
-        </div>
       </div>
     </Layout>
   // )
