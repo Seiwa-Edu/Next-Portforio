@@ -4,7 +4,7 @@ import { GetStaticProps } from 'next'
 import { NextPage } from 'next';
 import * as React from 'react';
 import { Works } from '../src/types/works';
-import work_css from '../styles/work.module.css'
+import card_css from '../styles/card.module.css'
 
 type Props = {
   works: Works[];
@@ -13,15 +13,15 @@ type Props = {
   const WorksPage: NextPage<Props> = ({ works}) => {
     return (
     <Layout title="Works | Seiwa Blog">
-      <div className={work_css.cardlayout_wrap}>
-        
+      <h2 className ={card_css.card_cate}>Works</h2>
+      <div className={card_css.cardlayout_wrap}>
           {/* カード要素 */}
           { works.map(work => (
-            <div className={work_css.card_list}>
-            <a href="#"　className={work_css.card__link} >
-              <figure className={work_css.card_figure}><img src={work.image.url} className={work_css.cardlayout_wrap_image}/></figure>
-              <h2 className={work_css.card_title}>{work.title}</h2>
-              <p className={work_css.card_text_tax}><div dangerouslySetInnerHTML={{
+            <div className={card_css.card_list}>
+            <a href="#"　className={card_css.card__link} >
+              <figure className={card_css.card_figure}><img src={work.image.url} className={card_css.cardlayout_wrap_image}/></figure>
+              <h2 className={card_css.card_title}>{work.title}</h2>
+              <p className={card_css.card_text_tax}><div dangerouslySetInnerHTML={{
                             __html: `${work.body}`,
                           }}
                         /></p>

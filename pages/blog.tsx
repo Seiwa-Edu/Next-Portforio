@@ -4,44 +4,36 @@ import { GetStaticProps } from 'next'
 import { NextPage } from 'next';
 import * as React from 'react';
 import { Blog } from '../src/types';
-import blog_css from '../styles/blog.module.css'
+import card_css from '../styles/card.module.css'
 
 type Props = {
-  blog: Blog[];
+  blogs: Blog[];
 }
 
 //アロー演算子を使った関数の書き方
 // const BlogPage = ({blogs}) => (
-  const BlogsPage: NextPage<Props> = ({ blog }) => {
+  const BlogsPage: NextPage<Props> = ({ blogs }) => {
     return (
     <Layout title="Blog | Seiwa Blog">
-      <div className={blog_css.cardlayout__wrap}>
-        <div className={blog_css.card__component}>
+            <h2 className ={card_css.card_cate}>Blog</h2>
+      <div className={card_css.cardlayout_wrap}>
           {/* カード要素 */}
-          { blog.map(blog => (
-            <a href="#"　className={blog_css.card__link} >
-              <div className={blog_css.card}>
-                  <div className={blog_css.card__imgframe}><img src={blog.image.url} className={blog_css.card__image}/></div>
-                  <div className={blog_css.card__textbox}>
-                    <div className={blog_css.card__titletext}>
-                      <p>{blog.title}</p>
-                    </div>
-                    <div className={blog_css.card__overviewtext}>
-                      {/* テキストエリアを返す */}
-                    　　<div dangerouslySetInnerHTML={{
+          { blogs.map(blog=> (
+            <div className={card_css.card_list}>
+            <a href="#"　className={card_css.card__link} >
+              <figure className={card_css.card_figure}><img src={blog.image.url} className={card_css.cardlayout_wrap_image}/></figure>
+              <h2 className={card_css.card_title}>{blog.title}</h2>
+              <p className={card_css.card_text_tax}><div dangerouslySetInnerHTML={{
                             __html: `${blog.body}`,
                           }}
-                        />
-                    </div>
-                  </div>
-              </div>
-              </a>
+                        /></p>
+            </a>
+            </div>
           ))}
           {/* カード要素 */}
-        </div>
       </div>
-    </Layout>
-  // )
+      </Layout>
+  //)
   );
 };
   
@@ -53,12 +45,12 @@ type Props = {
       // headers: {'X-API-KEY': process.env.API_KEY},
       headers: {'X-API-KEY': '92887c9a-4cc2-45c9-addc-1074f7676411'},
     };
-    const data = await fetch('https://seiwa-portfolio.microcms.io/api/v1/blog',key)
+    const data = await fetch('https://seiwa-portfolio.microcms.io/api/v1/blogs',key)
     .then( res => res.json())
     .catch(()=> null);
     return {
       props: {
-        blog: data.contents,
+        blogs: data.contents,
       },
       
     };
