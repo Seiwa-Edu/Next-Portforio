@@ -33,11 +33,15 @@ export default function Home() {
           <section className={style_css.works_section}>
          　 <div>
               <h2>Works</h2>
+
+              <a>もっと見る</a>
             </div>
           </section>
           <section className={style_css.blog_section}>
           <div>
               <h2>Blogs</h2>
+              
+              <a>もっと見る</a>
             </div>
           </section>
         </div>

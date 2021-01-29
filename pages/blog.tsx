@@ -38,8 +38,6 @@ type Props = {
 };
   
     // APIキーの取得
-    //  export async function getStaticProps(context) {
-    // export const GetStaticProps = async () => {
     export const getStaticProps: GetStaticProps = async context => {
     const key = {
       // headers: {'X-API-KEY': process.env.API_KEY},
