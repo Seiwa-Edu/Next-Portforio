@@ -29,10 +29,27 @@
   background-color: #fff1de;
 }
 
-/* 仕事関連のセクション */
+.skill__wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
 
+/* 仕事関連のセクション */
+.section_title {
+  text-align: center;
+}
 .works_section {
 }
 
 .blog_section {
+}
+
+.programming_wrapper {
+  display: flex;
+}
+
+.programming_cate {
+  font-weight: 700;
+  font-size: 1.8rem;
 }
