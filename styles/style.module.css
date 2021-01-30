@@ -13,10 +13,13 @@
 
 .intro__image {
   width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro__code {
-  width: 100%;
+  width: 60%;
 }
 
 .intro__textBox {
@@ -27,6 +30,7 @@
 
 .skill_section {
   background-color: #fff1de;
+  padding: 3.5rem 0;
 }
 
 .skill__wrapper {
@@ -47,6 +51,14 @@
 
 .programming_wrapper {
   display: flex;
+}
+
+.programming__comp {
+  display: flex;
+}
+
+.programming__image {
+  width: 15%;
 }
 
 .programming_cate {

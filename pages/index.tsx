@@ -10,12 +10,12 @@ export default function Home() {
           <section className={style_css.intro_section}>
             <div className={style_css.intro__wrapper}>
               <div className={style_css.intro__content}>
-                <div className={style_css.intro__image}><img src="" className={style_css.intro__code}/></div>
+                <div className={style_css.intro__image}><img src="undraw_Powerful_re_frhr.svg" className={style_css.intro__code}/></div>
                 <div className={style_css.intro__textBox}>
                   <h2>Seiwa</h2>
                   <p>1998/01/31　生まれ</p>
                   <p>高校まで岩手県盛岡市で生活し、大学では微生物を活用した遺伝子の研究を行う。</p>
-                  <p>2020年3月 友人とのAR開発がきっかけでプログラミングを始める。</p>
+                  <p>2020年3月 同郷の友人達とのAR開発を行ったことがきっかけでプログラミングを始める。</p>
                   <p>趣味: 温泉と二郎と開発</p>
                 </div>
               </div>
@@ -25,11 +25,20 @@ export default function Home() {
             <div className={style_css.skill__wrapper}>
               <h2 className={style_css.section_title}>Skill</h2>
               <div className={style_css.programming_wrapper}>
-                 <h3 className={style_css.programming_cate}>Frontend</h3>
-              </div>              
-              <p>HTML/CSS</p>
+                 <h3 className={style_css.programming_cate}>Front-end</h3>
+              </div> 
+              <div className={style_css.programming__comp}>
+                <div className={style_css.programming__image}><img src="HTML5_Badge.svg"/></div>
+                <div className={style_css.hello}>
+                <h4>HTML/CSS</h4>
+                <p>開発経験 約1年間。<br></br>
+                   Webサイトの作成、WEBサービスの作成、<br></br>
+                   デザインからのサイト作成も経験。</p>
+                </div>
+              </div>             
+              
               <p>JavaScript React</p>
-              <h3 className={style_css.programming_cate}>Backend</h3>
+              <h3 className={style_css.programming_cate}>Back-end</h3>
               <p>Ruby on Rails</p>
               <div>
                  <h3 className={style_css.programming_cate}>infrastructure</h3>
