@@ -12,7 +12,6 @@ export default function BlogId ({blog}) {
             />
     </main>
     )
-    
 }
 
     export const getStaticPaths: GetStaticPaths = async () => {
@@ -27,8 +26,7 @@ export default function BlogId ({blog}) {
     
       return { paths, fallback: false}
     }
-
-
+    
     // APIキーの取得
     export const getStaticProps: GetStaticProps = async context => {
         const key = {
