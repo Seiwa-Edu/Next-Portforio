@@ -11,6 +11,7 @@ const BlogId: NextPage<Props> = ({ blog }) => {
 // export default function BlogId ({blog}) {
     return (
           <Layout>
+            <p>Hi</p>
             <main>{blog.title}
                     {/* <p>{blog.publishedAt}</p> */}
                 <div
