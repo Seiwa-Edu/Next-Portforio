@@ -20,7 +20,7 @@ type Props = {
           {/* カード要素 */}
           { blogs.map(blog=> (
             <div className={card_css.card_list}>
-             <Link href={`blogs/${blog.id}`}>
+             <Link href={`blog/${blog.id}`}>
                 <a href="#" className={card_css.card__link} >
                   <figure className={card_css.card_figure}><img src={blog.image.url} className={card_css.cardlayout_wrap_image}/></figure>
                   <h2 className={card_css.card_title}>{blog.title}</h2>

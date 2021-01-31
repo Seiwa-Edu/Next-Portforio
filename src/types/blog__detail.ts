@@ -5,4 +5,5 @@ export type Blog__detail = {
     image: {
         url:string;
     }
+    publishedAt: any;
 }
