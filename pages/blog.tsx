@@ -20,14 +20,16 @@ type Props = {
           {/* カード要素 */}
           { blogs.map(blog=> (
             <div className={card_css.card_list}>
-            <a href="#"　className={card_css.card__link} >
-              <figure className={card_css.card_figure}><img src={blog.image.url} className={card_css.cardlayout_wrap_image}/></figure>
-              <h2 className={card_css.card_title}>{blog.title}</h2>
-              <p className={card_css.card_text_tax}><div dangerouslySetInnerHTML={{
-                            __html: `${blog.body}`,
-                          }}
-                        /></p>
-            </a>
+             <Link href={`blogs/${blog.id}`}>
+                <a href="#" className={card_css.card__link} >
+                  <figure className={card_css.card_figure}><img src={blog.image.url} className={card_css.cardlayout_wrap_image}/></figure>
+                  <h2 className={card_css.card_title}>{blog.title}</h2>
+                  <p className={card_css.card_text_tax}><div dangerouslySetInnerHTML={{
+                                __html: `${blog.body}`,
+                              }}
+                            /></p>
+                </a>
+            </Link>
             </div>
           ))}
           {/* カード要素 */}

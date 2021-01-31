@@ -1,19 +1,26 @@
 import { GetStaticProps, GetStaticPaths } from 'next'
 import Layout from '../../components/Layout'
+import { Blog__detail } from '../../src/types/blog__detail';
+
+type Props = {
+  blog: Blog__detail[];
+}
 
 export default function BlogId ({blog}) {
     return (
-        <main>{blog.title}
-                <p>{blog.publishedAt}</p>
-            <div
-                dangerouslySetInnerHTML={{
-                __html: `${blog.body}`,
-                }}
-            />
-    </main>
+          <Layout>
+            <main>{blog.title}
+                    <p>{blog.publishedAt}</p>
+                <div
+                    dangerouslySetInnerHTML={{
+                    __html: `${blog.body}`,
+                    }}
+                />
+        </main>
+      </Layout>
+        
     )
 }
-
     export const getStaticPaths: GetStaticPaths = async () => {
       const key = {
         // headers: {'X-API-KEY': process.env.API_KEY},
@@ -26,25 +33,25 @@ export default function BlogId ({blog}) {
     
       return { paths, fallback: false}
     }
-    
+
     // APIキーの取得
     export const getStaticProps: GetStaticProps = async context => {
+        const id = context.params.id
         const key = {
           // headers: {'X-API-KEY': process.env.API_KEY},
           headers: {'X-API-KEY': '92887c9a-4cc2-45c9-addc-1074f7676411'},
         };
-        const data = await fetch('https://seiwa-portfolio.microcms.io/api/v1/blogs',key)
+        const data = await fetch('https://seiwa-portfolio.microcms.io/api/v1/blogs/'+ id, key,)
         .then( res => res.json())
         .catch(()=> null);
         return {
           props: {
-            blogs: data.contents,
+            blogs: data,
           },
           
         };
       };
       
-
       // 参考
       //https://nextjs.org/blog/next-9-3
       //https://github.com/vercel/next.js/blob/canary/examples/with-typescript/pages/users/%5Bid%5D.tsx
