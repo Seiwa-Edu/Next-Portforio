@@ -1,16 +1,18 @@
 import { GetStaticProps, GetStaticPaths } from 'next'
 import Layout from '../../components/Layout'
 import { Blog__detail } from '../../src/types/blog__detail';
+import { NextPage } from 'next';
 
 type Props = {
-  blog: Blog__detail[];
+  blog: Blog__detail;
 }
 
-export default function BlogId ({blog}) {
+const BlogId: NextPage<Props> = ({ blog }) => {
+// export default function BlogId ({blog}) {
     return (
           <Layout>
             <main>{blog.title}
-                    <p>{blog.publishedAt}</p>
+                    {/* <p>{blog.publishedAt}</p> */}
                 <div
                     dangerouslySetInnerHTML={{
                     __html: `${blog.body}`,
@@ -51,6 +53,8 @@ export default function BlogId ({blog}) {
           
         };
       };
+
+      export default BlogId;
       
       // 参考
       //https://nextjs.org/blog/next-9-3
