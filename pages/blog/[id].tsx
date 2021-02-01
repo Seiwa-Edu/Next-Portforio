@@ -2,6 +2,7 @@ import { Blog__detail } from '../../src/types/blog__detail';
 import { NextPage } from 'next';
 import { GetStaticProps } from 'next';
 import Layout from '../../components/Layout'
+import detail__css from '../../styles/detail.module.css'
 
 
 type Props = {
@@ -13,16 +14,19 @@ type Props = {
   const BlogId: NextPage<Props> = ({ blog }) => {
     return (
       <Layout title="Blog | Seiwa Blog">
-        <div>
-            <div><img  src={blog.image.url} /></div>
-                <h1>{blog.title}</h1>
-                <p>{blog.publishedAt}</p>
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: `${blog.body}`,
-                  }}
-                />
-        </div>
+        <article className={detail__css.detail__article}>
+            <div className={detail__css.detail__wrapper}>
+              <div><img  src={blog.image.url} className={detail__css.detail__image} /></div>
+                      <h1>{blog.title}</h1>
+                      <p>{blog.publishedAt}</p>
+                    <div
+                      dangerouslySetInnerHTML={{
+                        __html: `${blog.body}`,
+                      }}
+                    />
+            </div>
+              
+          </article>
             
         
       </Layout>

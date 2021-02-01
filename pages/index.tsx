@@ -60,7 +60,7 @@ export default function Home() {
                 
                  <h3 className={style_css.programming_cate}>infrastructure</h3>
               </div>   
-              <p>AWS</p>
+              <p>AWS📝</p>
             </div>
           </section>
           <section className={style_css.works_section}>
