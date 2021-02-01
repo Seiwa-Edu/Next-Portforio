@@ -2,7 +2,7 @@ import { Work__detail } from '../../src/types/work__detail';
 import { NextPage } from 'next';
 import { GetStaticProps } from 'next';
 import Layout from '../../components/Layout'
-
+import detail__css from '../../styles/detail.module.css'
 
 type Props = {
   work: Work__detail;
@@ -13,16 +13,20 @@ type Props = {
   const WorkId: NextPage<Props> = ({ work }) => {
     return (
         <Layout title="Blog | Seiwa Blog">
-          <div>
-          <div><img  src={work.image.url} /></div>
-                <h1>{work.title}</h1>
-              <p>{work.publishedAt}</p>
-              <div
-                dangerouslySetInnerHTML={{
-                  __html: `${work.body}`,
-                }}
-              />
-          </div>
+          
+          <article className={detail__css.detail__article}>
+            <div className={detail__css.detail__wrapper}>
+              <div><img  src={work.image.url} className={detail__css.detail__image} /></div>
+                      <h1>{work.title}</h1>
+                      <p>{work.publishedAt}</p>
+                    <div
+                      dangerouslySetInnerHTML={{
+                        __html: `${work.body}`,
+                      }}
+                    />
+            </div>
+              
+          </article>
         
       </Layout>
     );

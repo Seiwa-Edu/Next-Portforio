@@ -1,0 +1,18 @@
+.detail__article {
+  /* width: 100%; */
+  width: 620px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.detail__wrapper {
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.detail__image {
+  width: 100%;
+  height: auto;
+}
