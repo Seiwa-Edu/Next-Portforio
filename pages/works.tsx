@@ -18,6 +18,7 @@ type Props = {
           {/* カード要素 */}
           { works.map(work => (
             <div className={card_css.card_list}>
+              <Link href={`work/${work.id}`}>
             <a href="#"　className={card_css.card__link} >
               <figure className={card_css.card_figure}><img src={work.image.url} className={card_css.cardlayout_wrap_image}/></figure>
               <h2 className={card_css.card_title}>{work.title}</h2>
@@ -26,6 +27,7 @@ type Props = {
                           }}
                         /></p>
             </a>
+            </Link>
             </div>
           ))}
           {/* カード要素 */}
