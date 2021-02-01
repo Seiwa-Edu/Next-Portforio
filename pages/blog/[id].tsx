@@ -13,15 +13,18 @@ type Props = {
   const BlogId: NextPage<Props> = ({ blog }) => {
     return (
       <Layout title="Blog | Seiwa Blog">
-        <h1>hello</h1>
-
-        <h1>{blog.title}</h1>
-        <p>{blog.publishedAt}</p>
-        <div
-          dangerouslySetInnerHTML={{
-            __html: `${blog.body}`,
-          }}
-        />
+        <div>
+            <div><img  src={blog.image.url} /></div>
+                <h1>{blog.title}</h1>
+                <p>{blog.publishedAt}</p>
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: `${blog.body}`,
+                  }}
+                />
+        </div>
+            
+        
       </Layout>
     );
   }

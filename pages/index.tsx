@@ -28,9 +28,11 @@ export default function Home() {
           <section className={style_css.skill_section}>
             <div className={style_css.skill__wrapper}>
               <h2 className={style_css.section_title}>Skill</h2>
+
               <div className={style_css.programming_wrapper}>
                  <h3 className={style_css.programming_cate}>Front-end</h3>
               </div> 
+
               <div className={style_css.programming__comp}>
                 <div className={style_css.programming__image}><img src="HTML5_Badge.svg"/></div>
                 <div className={style_css.hello}>
@@ -42,9 +44,20 @@ export default function Home() {
               </div>             
               
               <p>JavaScript React</p>
-              <h3 className={style_css.programming_cate}>Back-end</h3>
-              <p>Ruby on Rails</p>
+              <div className={style_css.programming_wrapper}>
+                 <h3 className={style_css.programming_cate}>Back-end</h3>
+              </div> 
+              <div className={style_css.programming__comp}>
+                <div className={style_css.programming__image}><img src="rails-1.svg" width="150px"/></div>
+                <div className={style_css.hello}>
+                <h4>Ruby on Rails</h4>
+                <p>開発経験 約1年間。<br></br>
+                   Webサイトの作成、WEBサービスの作成、<br></br>
+                   デザインからのサイト作成も経験。</p>
+                </div>
+              </div>     
               <div>
+                
                  <h3 className={style_css.programming_cate}>infrastructure</h3>
               </div>   
               <p>AWS</p>

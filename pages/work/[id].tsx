@@ -13,15 +13,17 @@ type Props = {
   const WorkId: NextPage<Props> = ({ work }) => {
     return (
         <Layout title="Blog | Seiwa Blog">
-        <h1>hello</h1>
-
-        <h1>{work.title}</h1>
-        <p>{work.publishedAt}</p>
-        <div
-          dangerouslySetInnerHTML={{
-            __html: `${work.body}`,
-          }}
-        />
+          <div>
+          <div><img  src={work.image.url} /></div>
+                <h1>{work.title}</h1>
+              <p>{work.publishedAt}</p>
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: `${work.body}`,
+                }}
+              />
+          </div>
+        
       </Layout>
     );
   }
