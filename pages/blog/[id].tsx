@@ -1,6 +1,7 @@
 import { Blog__detail } from '../../src/types/blog__detail';
 import { NextPage } from 'next';
 import { GetStaticProps } from 'next';
+import Layout from '../../components/Layout'
 
 
 type Props = {
@@ -11,7 +12,7 @@ type Props = {
 // export default function BlogId({ blog }) {
   const BlogId: NextPage<Props> = ({ blog }) => {
     return (
-      <main>
+      <Layout title="Blog | Seiwa Blog">
         <h1>hello</h1>
 
         <h1>{blog.title}</h1>
@@ -21,7 +22,7 @@ type Props = {
             __html: `${blog.body}`,
           }}
         />
-      </main>
+      </Layout>
     );
   }
 
