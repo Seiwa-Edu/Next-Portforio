@@ -9,7 +9,7 @@ type Props = {
 // const Card = ({props}: Props)=> (
     function Card(props) {
         return (
-        <div>
+
             <div className={card_css.card_list}>
                   {/* <Link href={`work/${props.id}`}> */}
                 <Link href={`${props.id}`}>
@@ -23,7 +23,6 @@ type Props = {
                     </a>
                 </Link>
             </div>
-        </div>
 
         )
 //  )

@@ -4,6 +4,7 @@ import Layout from '../components/Layout'
 import style_css from '../styles/style.module.css'
 import Card from '../components/Card'
 import card_css from '../styles/card.module.css'
+import Link from 'next/link'
 
 
 export default function Home() {
@@ -55,9 +56,12 @@ export default function Home() {
               <div className={card_css.cardlayout_wrap}>
                   <Card title ="hello" id ="blog/yaurrrnlm" body="Micocms導入完了" image="team-5614157_1280.png"/>
                   <Card title ="hello" id ="blog/yaurrrnlm" body="Micocms導入完了" image="team-5614157_1280.png"/>
+                  <Card title ="hello" id ="blog/yaurrrnlm" body="Micocms導入完了" image="team-5614157_1280.png"/>
               </div>
+              <Link href="/works">
+               <a>もっと見る</a>
+              </Link>
               
-              <a>もっと見る</a>
             </div>
           </section>
           <section className={style_css.blog_section}>
@@ -66,8 +70,11 @@ export default function Home() {
               <div className={card_css.cardlayout_wrap}>
                 <Card title ="hello" id ="blog/yaurrrnlm" body="Micocms導入完了" image="team-5614157_1280.png"/>
                 <Card title ="hello" id ="blog/yaurrrnlm" body="Micocms導入完了" image="team-5614157_1280.png"/>
+                <Card title ="hello" id ="blog/yaurrrnlm" body="Micocms導入完了" image="team-5614157_1280.png"/>
               </div>
-              <a>もっと見る</a>
+              <Link href="/blog">
+               <a>もっと見る</a>
+              </Link>
             </div>
           </section>
         </div>
