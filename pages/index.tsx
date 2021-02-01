@@ -2,6 +2,9 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Layout from '../components/Layout'
 import style_css from '../styles/style.module.css'
+import Card from '../components/Card'
+import card_css from '../styles/card.module.css'
+
 
 export default function Home() {
   return (
@@ -13,9 +16,9 @@ export default function Home() {
                 <div className={style_css.intro__image}><img src="undraw_Powerful_re_frhr.svg" className={style_css.intro__code}/></div>
                 <div className={style_css.intro__textBox}>
                   <h2>Seiwa</h2>
-                  <p>1998/01/31　生まれ</p>
-                  <p>高校まで岩手県盛岡市で生活し、大学では微生物を活用した遺伝子の研究を行う。</p>
-                  <p>2020年3月 同郷の友人達とのAR開発を行ったことがきっかけでプログラミングを始める。</p>
+                  {/* <p>1998/01/31　生まれ</p> */}
+                  <p>岩手県盛岡市育ち。大学では微生物を活用した遺伝子の研究を行う。</p>
+                  <p>同郷の友人達とのAR開発を行ったことがきっかけでプログラミングを始める。</p>
                   <p>趣味: 温泉と二郎と開発</p>
                 </div>
               </div>
@@ -49,12 +52,21 @@ export default function Home() {
           <section className={style_css.works_section}>
          　 <div className={style_css.skill__wrapper}>
               <h2 className={style_css.section_title}>Works</h2>
+              <div className={card_css.cardlayout_wrap}>
+                  <Card title ="hello" id ="blog/yaurrrnlm" body="Micocms導入完了" image="team-5614157_1280.png"/>
+                  <Card title ="hello" id ="blog/yaurrrnlm" body="Micocms導入完了" image="team-5614157_1280.png"/>
+              </div>
+              
               <a>もっと見る</a>
             </div>
           </section>
           <section className={style_css.blog_section}>
           <div className={style_css.skill__wrapper}>
               <h2 className={style_css.section_title}>Blogs</h2>
+              <div className={card_css.cardlayout_wrap}>
+                <Card title ="hello" id ="blog/yaurrrnlm" body="Micocms導入完了" image="team-5614157_1280.png"/>
+                <Card title ="hello" id ="blog/yaurrrnlm" body="Micocms導入完了" image="team-5614157_1280.png"/>
+              </div>
               <a>もっと見る</a>
             </div>
           </section>
