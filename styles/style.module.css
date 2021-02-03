@@ -73,3 +73,18 @@
 .detail__link:hover {
   color: #d88237;
 }
+
+@media screen and (max-width: 480px) {
+  .intro__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro__image {
+    width: 100%;
+  }
+
+  .intro__textBox {
+    width: 100%;
+  }
+}
