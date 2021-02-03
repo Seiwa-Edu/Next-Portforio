@@ -38,12 +38,12 @@ export default function Home() {
                 <div className={style_css.hello}>
                 <h4>HTML/CSS</h4>
                 <p>開発経験 約1年間。<br></br>
-                   Webサイトの作成、WEBサービスの作成、<br></br>
-                   デザインからのサイト作成も経験。</p>
+                   Webサイトの作成、WEBサービスの作成、デザインからのサイト作成も経験。</p>
                 </div>
               </div>             
               
-              <p>JavaScript React</p>
+              <h4>JavaScript React</h4>
+              <p> React, Next js, TypeScript を中心に学習中</p>
               <div className={style_css.programming_wrapper}>
                  <h3 className={style_css.programming_cate}>Back-end</h3>
               </div> 
@@ -51,15 +51,13 @@ export default function Home() {
                 <div className={style_css.programming__image}><img src="rails-1.svg" width="150px"/></div>
                 <div className={style_css.hello}>
                 <h4>Ruby on Rails</h4>
-                <p>開発経験 約1年間。<br></br>
-                   Webサイトの作成、WEBサービスの作成、<br></br>
-                   デザインからのサイト作成も経験。</p>
+                <p>勉強中</p>
                 </div>
               </div>     
               <div>               
                  <h3 className={style_css.programming_cate}>infrastructure</h3>
               </div>   
-              <p>AWS📝</p>
+              <h4>AWS📝</h4>
             </div>
           </section>
           <section className={style_css.works_section}>
