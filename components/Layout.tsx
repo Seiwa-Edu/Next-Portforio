@@ -34,15 +34,15 @@ const Layout = ({ children, title = 'Seiwa Blog' }: Props)=> (
                </div>
             </nav>
             <main>{children}</main>
-           <footer>
-               <div>
-                   <div className={header_css.nav__slide}>
-                    <Link href="/"><a className={header_css.navi_a}>Home</a></Link>
-                    <Link href="/works"><a className={header_css.navi_a}>Works</a></Link>
-                    <Link href="/blog"><a className={header_css.navi_a}>Blog</a></Link>
+           <footer className={header_css.footer}>
+               <div className={header_css.footer__wrapper}>
+                   <div className={header_css.footer__nav__slide}>
+                    <Link href="/"><a className={header_css.footer__nav__a}>Home</a></Link>
+                    <Link href="/works"><a className={header_css.footer__nav__a}>Works</a></Link>
+                    <Link href="/blog"><a className={header_css.footer__nav__a}>Blog</a></Link>
                    </div>
                </div>
-               <p>Thank you for visiting my websaite!</p>
+               <p className={header_css.footer__message}>Thank you for visiting my websaite!</p>
            </footer>
        </div>
     )

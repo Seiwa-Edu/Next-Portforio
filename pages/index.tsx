@@ -56,8 +56,7 @@ export default function Home() {
                    デザインからのサイト作成も経験。</p>
                 </div>
               </div>     
-              <div>
-                
+              <div>               
                  <h3 className={style_css.programming_cate}>infrastructure</h3>
               </div>   
               <p>AWS📝</p>
@@ -71,10 +70,9 @@ export default function Home() {
                   <Card title ="hello" id ="blog/yaurrrnlm" body="Micocms導入完了" image="team-5614157_1280.png"/>
                   <Card title ="hello" id ="blog/yaurrrnlm" body="Micocms導入完了" image="team-5614157_1280.png"/>
               </div>
-              <Link href="/works">
-               <a>もっと見る</a>
-              </Link>
-              
+              <Link href="/works">     
+                 <a className={style_css.detail__link}>もっと見る</a>
+              </Link>           
             </div>
           </section>
           <section className={style_css.blog_section}>
@@ -86,7 +84,7 @@ export default function Home() {
                 <Card title ="hello" id ="blog/yaurrrnlm" body="Micocms導入完了" image="team-5614157_1280.png"/>
               </div>
               <Link href="/blog">
-               <a>もっと見る</a>
+              <a className={style_css.detail__link}>もっと見る</a>
               </Link>
             </div>
           </section>

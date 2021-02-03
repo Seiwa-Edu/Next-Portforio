@@ -63,3 +63,28 @@
   display: flex;
   align-items: center;
 }
+
+.footer {
+  background-color: #ff993e;
+  margin-top: 50px;
+  margin-bottom: 0;
+  height: 80px;
+  padding-top: 10px;
+}
+
+.footer__nav__slide {
+  width: 100%;
+  text-align: center;
+}
+
+.footer__nav__a {
+  color: white;
+  margin: 0 20px;
+}
+
+.footer__message {
+  width: 100%;
+  text-align: center;
+  color: white;
+  margin: 0;
+}

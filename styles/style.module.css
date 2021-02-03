@@ -43,11 +43,6 @@
 .section_title {
   text-align: center;
 }
-.works_section {
-}
-
-.blog_section {
-}
 
 .programming_wrapper {
   display: flex;
@@ -64,4 +59,17 @@
 .programming_cate {
   font-weight: 700;
   font-size: 1.8rem;
+}
+
+.detail__link {
+  text-align: right;
+  display: inline-block;
+  width: 100%;
+  color: #ff993e;
+  font-weight: 700;
+  transition: color 0.5s;
+}
+
+.detail__link:hover {
+  color: #d88237;
 }
