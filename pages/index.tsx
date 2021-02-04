@@ -34,7 +34,7 @@ export default function Home() {
               </div> 
 
               <div className={style_css.programming__comp}>
-                <div className={style_css.programming__image}><img src="HTML5_Badge.svg"/></div>
+                {/* <div className={style_css.programming__image}><img src="HTML5_Badge.svg"/></div> */}
                 <div className={style_css.hello}>
                 <h4>HTML/CSS</h4>
                 <p>開発経験 約1年間。<br></br>
@@ -48,7 +48,7 @@ export default function Home() {
                  <h3 className={style_css.programming_cate}>Back-end</h3>
               </div> 
               <div className={style_css.programming__comp}>
-                <div className={style_css.programming__image}><img src="rails-1.svg" width="150px"/></div>
+                {/* <div className={style_css.programming__image}><img src="rails-1.svg" width="150px"/></div> */}
                 <div className={style_css.hello}>
                 <h4>Ruby on Rails</h4>
                 <p>勉強中</p>
@@ -57,7 +57,9 @@ export default function Home() {
               <div>               
                  <h3 className={style_css.programming_cate}>infrastructure</h3>
               </div>   
-              <h4>AWS📝</h4>
+              <h4>AWS</h4>
+              <p>クラウドプラクティショナー資格　保持</p>
+              <p>ソリューションアーキテクト – アソシエイト 勉強中</p>
             </div>
           </section>
           <section className={style_css.works_section}>
