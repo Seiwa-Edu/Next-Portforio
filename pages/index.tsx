@@ -66,7 +66,7 @@ export default function Home() {
          　 <div className={style_css.skill__wrapper}>
               <h2 className={style_css.section_title}>Work</h2>
               <div className={card_css.cardlayout_wrap}>
-                  <Card title ="自己紹介サイト" id ="blog/yaurrrnlm" body="Nextjs TypeScriptでサイト作成" image="team-5614157_1280.png"/>
+                  <Card title ="自己紹介サイト" id ="work/nkgjap1lrf" body="Nextjs TypeScriptでサイト作成" image="team-5614157_1280.png"/>
               </div>
               <Link href="/works">     
                  <a className={style_css.detail__link}>もっと見る</a>
@@ -77,7 +77,7 @@ export default function Home() {
           <div className={style_css.skill__wrapper}>
               <h2 className={style_css.section_title}>Blog</h2>
               <div className={card_css.cardlayout_wrap}>
-                <Card title ="hello" id ="blog/yaurrrnlm" body="demo投稿" image="team-5614157_1280.png"/>
+                <Card title ="Hello world" id ="blog/yaurrrnlm" body="microcms動作確認" image="team-5614157_1280.png"/>
               </div>
               <Link href="/blog">
               <a className={style_css.detail__link}>もっと見る</a>
