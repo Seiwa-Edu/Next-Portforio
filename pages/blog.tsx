@@ -24,10 +24,11 @@ type Props = {
                 <a href="#" className={card_css.card__link} >
                   <figure className={card_css.card_figure}><img src={blog.image.url} className={card_css.cardlayout_wrap_image}/></figure>
                   <h2 className={card_css.card_title}>{blog.title}</h2>
-                  <p className={card_css.card_text_tax}><div dangerouslySetInnerHTML={{
+                  <p className={card_css.card_text_tax}>詳細へ</p>
+                  {/* <p className={card_css.card_text_tax}><div dangerouslySetInnerHTML={{
                                 __html: `${blog.body}`,
                               }}
-                            /></p>
+                            /></p> */}
                 </a>
             </Link>
             </div>

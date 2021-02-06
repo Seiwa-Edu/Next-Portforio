@@ -12,8 +12,8 @@ type Props = {
 
   const WorksPage: NextPage<Props> = ({ works}) => {
     return (
-    <Layout title="Works | Seiwa Blog">
-      <h2 className ={card_css.card_cate}>Works</h2>
+    <Layout title="Work | Seiwa Blog">
+      <h2 className ={card_css.card_cate}>Work</h2>
       <div className={card_css.cardlayout_wrap}>
           {/* カード要素 */}
           { works.map(work => (

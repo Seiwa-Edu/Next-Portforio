@@ -51,15 +51,15 @@ export default function Home() {
                 {/* <div className={style_css.programming__image}><img src="rails-1.svg" width="150px"/></div> */}
                 <div className={style_css.hello}>
                 <h4>Ruby on Rails</h4>
-                <p>勉強中</p>
+                <p>開発経験 約3、４ヶ月<br></br>
+                WEBサービス作成中</p>
                 </div>
               </div>     
               <div>               
                  <h3 className={style_css.programming_cate}>infrastructure</h3>
               </div>   
               <h4>AWS</h4>
-              <p>クラウドプラクティショナー資格　保持</p>
-              <p>ソリューションアーキテクト – アソシエイト 勉強中</p>
+              <p>勉強中</p>
             </div>
           </section>
           <section className={style_css.works_section}>
