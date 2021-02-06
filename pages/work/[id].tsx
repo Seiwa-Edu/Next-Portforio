@@ -19,7 +19,7 @@ type Props = {
               <div><img  src={work.image.url} className={detail__css.detail__image} /></div>
                       <h1>{work.title}</h1>
                       <p>{work.publishedAt}</p>
-                    <div
+                    <div className={detail__css.detail__text}
                       dangerouslySetInnerHTML={{
                         __html: `${work.body}`,
                       }}
