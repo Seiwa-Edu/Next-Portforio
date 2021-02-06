@@ -41,6 +41,10 @@
     margin: 0 auto;
   }
 
+  .detail__text p {
+    overflow-wrap: break-word;
+  }
+
   .detail__text img {
     max-width: 100%;
     height: auto;
