@@ -1,3 +1,10 @@
+.content {
+  min-height: 100vh; /* ←コンテンツの高さの最小値＝ブラウザの高さに指定 */
+  position: relative; /* ←相対位置 */
+  padding-bottom: 80px; /* ←フッターの高さを指定 */
+  box-sizing: border-box;
+}
+
 .header {
   width: 100%;
   background-color: white;
@@ -69,7 +76,10 @@
   margin-top: 50px;
   margin-bottom: 0;
   height: 80px;
+  width: 100%;
   padding-top: 10px;
+  position: absolute; /* ←絶対位置 */
+  bottom: 0;
 }
 
 .footer__nav__slide {

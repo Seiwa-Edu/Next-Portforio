@@ -16,6 +16,7 @@ const Layout = ({ children, title = 'Seiwa Blog' }: Props)=> (
                <meta charSet="utf-8" />
                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
            </Head>
+           <div className={header_css.content}>
            <header className={header_css.header}>
                <div className={header_css.header__wrap}>
                　　<div className={header_css.header__slide}>
@@ -45,6 +46,7 @@ const Layout = ({ children, title = 'Seiwa Blog' }: Props)=> (
                <p className={header_css.footer__message}>Thank you for visiting my websaite!</p>
            </footer>
        </div>
+    </div>
     )
 
 export default Layout
