@@ -54,7 +54,7 @@ a.card_link {
 
 /* カードレイアウトを1カラムで配置 */
 .card_list {
-  margin: 0.5em auto;
+  margin: 0.5em 15px;
   padding: 0;
   width: 100%;
   /* background: #f0f0f0; */

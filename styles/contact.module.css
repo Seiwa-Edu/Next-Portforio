@@ -22,3 +22,18 @@
 .contact_link {
   display: block;
 }
+
+.contact_link:hover {
+  color: coral;
+}
+
+@media screen and (max-width: 480px) {
+  .contact_link {
+    width: 100%;
+  }
+
+  .contact_wrapper {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
