@@ -6,7 +6,6 @@ import Card from '../components/Card'
 import card_css from '../styles/card.module.css'
 import Link from 'next/link'
 
-
 export default function Home() {
   return (
     <Layout title="Home | Seiwa Blog">
@@ -35,13 +34,13 @@ export default function Home() {
 
             <div className={style_css.programming__comp}>
               {/* <div className={style_css.programming__image}><img src="HTML5_Badge.svg"/></div> */}
+              {/* <div className={style_css.programming_image}><img src="/logo-01.png" alt="HTML Logo"/></div> */}
               <div className={style_css.hello}>
                 <h4>HTML/CSS</h4>
                 <p>開発経験 約1年間。<br></br>
                    Webサイトの作成、WEBサービスの作成、デザインからのサイト作成も経験。</p>
               </div>
             </div>
-
             <h4>JavaScript React</h4>
             <p> React, Next js, TypeScript を中心に学習中</p>
             <div className={style_css.programming_wrapper}>
