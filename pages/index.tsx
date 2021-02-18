@@ -18,9 +18,9 @@ export default function Home() {
               <div className={style_css.intro__textBox}>
                 <h2>Seiwa</h2>
                 {/* <p>1998/01/31　生まれ</p> */}
-                <p>岩手県盛岡市育ち。大学では微生物を活用した遺伝子の研究を行う。</p>
-                <p>同郷の友人達とのAR開発を行ったことがきっかけでプログラミングを始める。</p>
-                <p>趣味: 温泉と二郎と開発</p>
+                <p>大学では微生物を活用した遺伝子の研究を行う。<br></br>
+                  同郷の友人達とのAR開発を行ったことがきっかけでプログラミングを始める。<br></br>趣味: 温泉と二郎と開発。</p>
+                <p>Team<br></br>Cicada: 同郷の友人3人とAR開発を中心に活動中。<br></br>ガンバイト: WEBアプリ開発を同郷の友人3人と。</p>
               </div>
             </div>
           </div>
@@ -59,7 +59,7 @@ export default function Home() {
               <h3 className={style_css.programming_cate}>infrastructure</h3>
             </div>
             <h4>AWS</h4>
-            <p>クラウドプラクティショナー </p>
+            <p>勉強中</p>
           </div>
         </section>
         <section className={style_css.works_section}>
