@@ -20,7 +20,7 @@ const Layout = ({ children, title = 'Seiwa Blog' }: Props)=> (
            <header className={header_css.header}>
                <div className={header_css.header__wrap}>
                　　<div className={header_css.header__slide}>
-                        <Link href="/"><a className ="logo">Seiwa Blog</a></Link>
+                        <Link href="/"><a className ={header_css.title_text}>Seiwa Blog</a></Link>
                         <div className="Contact"><Link href="/contact"><a className={header_css.header__contact}>Contact</a></Link></div>
                    </div>
                </div>

@@ -35,6 +35,12 @@
   background-color: #eb8c39;
 }
 
+.title_text {
+  color: #ff993e;
+  font-weight: 700;
+  font-size: 20px;
+}
+
 .navi {
   z-index: 999;
   position: sticky;
