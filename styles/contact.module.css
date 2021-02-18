@@ -4,6 +4,10 @@
   width: 45%;
 }
 
+.contact_title {
+  color: #ff993e;
+}
+
 .contact_wrapper {
   padding: 0.5em 1em;
   margin: 2em 0;
@@ -35,5 +39,7 @@
   .contact_wrapper {
     margin-left: 20px;
     margin-right: 20px;
+    width: 100%;
+    text-align: center;
   }
 }

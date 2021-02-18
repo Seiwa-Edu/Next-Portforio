@@ -6,7 +6,7 @@ const ContactPage = () => (
     <Layout title="Contact | Seiwa Blog">
       <section className={contact_css.contact_link}>
           <div  className={contact_css.contact_wrapper}>
-          <h1>Contact</h1>
+          <h1 className={contact_css.contact_title}>Contact</h1>
           <div>
             <p className={contact_css.text}>
               <a href="https://github.com/Seiwa-Edu" className={contact_css.contact_link}>GitHub:Seiwa-Edu</a>

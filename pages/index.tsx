@@ -33,7 +33,7 @@ export default function Home() {
             </div>
 
             <div className={style_css.programming__comp}>
-              {/* <div className={style_css.programming_image}><img src="/logo-01.png" alt="HTML Logo"/></div> */}
+              <div className={style_css.programming_image}><img src="/html_css.png" alt="HTML Logo"/></div>
               <div className={style_css.hello}>
                 <h4>HTML/CSS</h4>
                 <p>開発経験 約1年間。<br></br>
