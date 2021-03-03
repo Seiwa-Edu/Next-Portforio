@@ -33,31 +33,42 @@ export default function Home() {
             </div>
 
             <div className={style_css.programming__comp}>
-              <div className={style_css.programming_image}><img src="/html_css.png" alt="HTML Logo"/></div>
-              <div className={style_css.hello}>
+              <div className={style_css.programming_image}><img src="/html_css.png" className={style_css.programming__Logo} alt="HTML Logo"/></div>
+              <div className={style_css.programming_text}>
                 <h4>HTML/CSS</h4>
                 <p>開発経験 約1年間。<br></br>
                    Webサイトの作成、WEBサービスの作成、デザインからのサイト作成も経験。</p>
               </div>
             </div>
-            <h4>JavaScript React</h4>
-            <p> React, Next js, TypeScript を中心に学習中</p>
+
+            <div className={style_css.programming__comp}>
+              <div className={style_css.programming_image}><img src="/html_css.png" className={style_css.programming__Logo} alt="HTML Logo"/></div>
+              <div className={style_css.programming_text}>
+                <h4>JavaScript React</h4>
+                <p> React, Next js, TypeScript を中心に学習中</p>
+              </div>
+            </div>
+            
             <div className={style_css.programming_wrapper}>
               <h3 className={style_css.programming_cate}>Back-end</h3>
             </div>
             <div className={style_css.programming__comp}>
-              {/* <div className={style_css.programming__image}><img src="rails-1.svg" width="150px"/></div> */}
-              <div className={style_css.hello}>
+              <div className={style_css.programming_image}><img src="/html_css.png" className={style_css.programming__Logo} alt="HTML Logo"/></div>
+              <div className={style_css.programming_text}>
                 <h4>Ruby on Rails</h4>
-                <p>開発経験 約４ヶ月<br></br>
-                WEBサービス作成中</p>
+                <p> 開発経験４ヶ月</p>
               </div>
             </div>
             <div>
               <h3 className={style_css.programming_cate}>infrastructure</h3>
             </div>
-            <h4>AWS</h4>
-            <p>勉強中</p>
+            <div className={style_css.programming__comp}>
+              <div className={style_css.programming_image}><img src="/html_css.png" className={style_css.programming__Logo} alt="HTML Logo"/></div>
+              <div className={style_css.programming_text}>
+                <h4>AWS</h4>
+                <p>クラウドプラクティショナー </p>
+              </div>
+            </div>
           </div>
         </section>
         <section className={style_css.works_section}>

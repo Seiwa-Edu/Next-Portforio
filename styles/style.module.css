@@ -52,8 +52,17 @@
   display: flex;
 }
 
-.programming__image {
-  width: 15%;
+.programming_image {
+  width: 50%;
+}
+
+.programming__Logo {
+  width: 100%;
+  object-fit: cover;
+}
+
+.programming_text {
+  align-items: center;
 }
 
 .programming_cate {
