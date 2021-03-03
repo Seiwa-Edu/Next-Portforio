@@ -42,7 +42,7 @@ export default function Home() {
             </div>
 
             <div className={style_css.programming__comp}>
-              <div className={style_css.programming_image}><img src="/html_css.png" className={style_css.programming__Logo} alt="HTML Logo"/></div>
+              <div className={style_css.programming_image}><img src="/react_logo.png" className={style_css.programming__Logo} alt="React Logo"/></div>
               <div className={style_css.programming_text}>
                 <h4>JavaScript React</h4>
                 <p> React, Next js, TypeScript を中心に学習中</p>
@@ -53,7 +53,7 @@ export default function Home() {
               <h3 className={style_css.programming_cate}>Back-end</h3>
             </div>
             <div className={style_css.programming__comp}>
-              <div className={style_css.programming_image}><img src="/html_css.png" className={style_css.programming__Logo} alt="HTML Logo"/></div>
+              <div className={style_css.programming_image}><img src="/rails_logo.png" className={style_css.programming__Logo} alt="HTML Logo"/></div>
               <div className={style_css.programming_text}>
                 <h4>Ruby on Rails</h4>
                 <p> 開発経験４ヶ月</p>
