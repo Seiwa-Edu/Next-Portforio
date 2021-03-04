@@ -97,4 +97,17 @@
   .intro__textBox {
     width: 100%;
   }
+
+  .programming__comp {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .programming_image {
+    width: 100%;
+  }
+
+  .programming_text {
+    width: 100%;
+  }
 }
