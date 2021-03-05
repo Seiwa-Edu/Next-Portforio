@@ -55,10 +55,11 @@
 .programming_image {
   width: 25%;
   margin-right: 20px;
+  text-align: center;
 }
 
 .programming__Logo {
-  width: 100%;
+  width: 70%;
   object-fit: cover;
 }
 
@@ -66,9 +67,19 @@
   align-items: center;
 }
 
+.programming__title {
+  font-size: 22px;
+}
+
+.programming__phrase {
+  font-size: 18px;
+}
+
 .programming_cate {
   font-weight: 700;
   font-size: 1.8rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .detail__link {

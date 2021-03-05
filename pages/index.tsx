@@ -35,8 +35,8 @@ export default function Home() {
             <div className={style_css.programming__comp}>
               <div className={style_css.programming_image}><img src="/html_css.png" className={style_css.programming__Logo} alt="HTML Logo"/></div>
               <div className={style_css.programming_text}>
-                <h4>HTML/CSS</h4>
-                <p>開発経験 約1年間。<br></br>
+                <h4 className={style_css.programming__title}>HTML/CSS</h4>
+                <p className={style_css.programming__phrase}>開発経験 約1年間。<br></br>
                    Webサイトの作成、WEBサービスの作成、デザインからのサイト作成も経験。</p>
               </div>
             </div>
@@ -44,8 +44,8 @@ export default function Home() {
             <div className={style_css.programming__comp}>
               <div className={style_css.programming_image}><img src="/react_logo.png" className={style_css.programming__Logo} alt="React Logo"/></div>
               <div className={style_css.programming_text}>
-                <h4>JavaScript React</h4>
-                <p> React, Next js, TypeScript を中心に学習中</p>
+                <h4 className={style_css.programming__title} >JavaScript React</h4>
+                <p className={style_css.programming__phrase}> React, Next js, TypeScript を中心に学習中</p>
               </div>
             </div>
             
@@ -55,8 +55,8 @@ export default function Home() {
             <div className={style_css.programming__comp}>
               <div className={style_css.programming_image}><img src="/rails_logo.png" className={style_css.programming__Logo} alt="HTML Logo"/></div>
               <div className={style_css.programming_text}>
-                <h4>Ruby on Rails</h4>
-                <p> 開発経験４ヶ月</p>
+                <h4 className={style_css.programming__title}>Ruby on Rails</h4>
+                <p className={style_css.programming__phrase}> 開発経験４ヶ月</p>
               </div>
             </div>
             <div>
@@ -65,8 +65,8 @@ export default function Home() {
             <div className={style_css.programming__comp}>
               <div className={style_css.programming_image}><img src="/html_css.png" className={style_css.programming__Logo} alt="HTML Logo"/></div>
               <div className={style_css.programming_text}>
-                <h4>AWS</h4>
-                <p>クラウドプラクティショナー </p>
+                <h4 className={style_css.programming__title} >AWS</h4>
+                <p className={style_css.programming__phrase}>クラウドプラクティショナー </p>
               </div>
             </div>
           </div>
