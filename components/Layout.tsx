@@ -3,13 +3,15 @@ import Link from 'next/link'
 import Head from 'next/head'
 import header_css from '../styles/layout.module.css'
 
+
 type Props = {
     children?: ReactNode
     title?: string
 }
 
-const Layout = ({ children, title = 'Seiwa Blog' }: Props)=> (
 
+const Layout = ({ children, title = 'Seiwa Blog' }: Props)=> (
+      
        <div>
            <Head>
                <title>{title}</title>
