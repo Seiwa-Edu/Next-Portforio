@@ -17,6 +17,11 @@ const Layout = ({ children, title = 'Seiwa Blog'}: Props)=> (
                     padding: 0.5rem 0;
                     border-bottom: 2px solid black;
                 }
+                
+                .active a {
+                    color: red;
+                }
+                
                 `}</style>
            <Head>
                <title>{title}</title>
@@ -35,7 +40,7 @@ const Layout = ({ children, title = 'Seiwa Blog'}: Props)=> (
            <nav className={header_css.navi}>
                <div className={header_css.nav__wrap}>
                    <div className={header_css.nav__slide}>
-                    <ActiveLink activeClassName="active" className={header_css.active_link} href="/"><a className={header_css.navi_a} >Home!</a></ActiveLink>
+                    <ActiveLink activeClassName="active" href="/"><a className={header_css.navi_a} >Home!</a></ActiveLink>
                     <ActiveLink activeClassName="active" href="/works"><a className={header_css.navi_a}>Work!</a></ActiveLink>
                     <ActiveLink activeClassName="active" href="/blog"><a className={header_css.navi_a}>Blog!</a></ActiveLink>
                    </div>
