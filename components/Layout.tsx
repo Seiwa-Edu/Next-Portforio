@@ -2,17 +2,23 @@ import React,{ ReactNode} from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 import header_css from '../styles/layout.module.css'
-
+import ActiveLink from './ActiveLink'
 
 type Props = {
     children?: ReactNode
     title?: string
+    activeClassName: string;
 }
-
 
 const Layout = ({ children, title = 'Seiwa Blog' }: Props)=> (
       
        <div>
+             <style jsx>{`
+                .active {
+                    padding: 0.5rem 0;
+                    border-bottom: 2px solid black;
+                }
+                `}</style>
            <Head>
                <title>{title}</title>
                <meta charSet="utf-8" />
@@ -22,7 +28,7 @@ const Layout = ({ children, title = 'Seiwa Blog' }: Props)=> (
            <header className={header_css.header}>
                <div className={header_css.header__wrap}>
                　　<div className={header_css.header__slide}>
-                        <Link href="/"><a className ={header_css.title_text}>Seiwa Blog</a></Link>
+                        <Link href="/" ><a className ={header_css.title_text}>Seiwa Blog</a></Link>
                         <div className="Contact"><Link href="/contact"><a className={header_css.header__contact}>Contact</a></Link></div>
                    </div>
                </div>
@@ -30,9 +36,9 @@ const Layout = ({ children, title = 'Seiwa Blog' }: Props)=> (
            <nav className={header_css.navi}>
                <div className={header_css.nav__wrap}>
                    <div className={header_css.nav__slide}>
-                    <Link href="/"><a className={header_css.navi_a}>Home!</a></Link>
-                    <Link href="/works"><a className={header_css.navi_a}>Work!</a></Link>
-                    <Link href="/blog"><a className={header_css.navi_a}>Blog!</a></Link>
+                    <ActiveLink activeClassName="active" className={header_css.active_link} href="/"><a className={header_css.navi_a} >Home!</a></ActiveLink>
+                    <ActiveLink activeClassName="active" href="/works"><a className={header_css.navi_a}>Work!</a></ActiveLink>
+                    <ActiveLink activeClassName="active" href="/blog"><a className={header_css.navi_a}>Blog!</a></ActiveLink>
                    </div>
                </div>
             </nav>
