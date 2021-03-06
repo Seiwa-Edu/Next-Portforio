@@ -7,10 +7,9 @@ import ActiveLink from './ActiveLink'
 type Props = {
     children?: ReactNode
     title?: string
-    activeClassName: string;
 }
 
-const Layout = ({ children, title = 'Seiwa Blog' }: Props)=> (
+const Layout = ({ children, title = 'Seiwa Blog'}: Props)=> (
       
        <div>
              <style jsx>{`
