@@ -65,6 +65,10 @@
   color: black;
 }
 
+.active {
+  color: red;
+}
+
 .nav__wrap {
   max-width: 1200px;
   padding: 0 40px;

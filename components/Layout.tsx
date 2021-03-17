@@ -15,12 +15,9 @@ const Layout = ({ children, title = 'Seiwa Blog'}: Props)=> (
              <style jsx>{`
                 .active {
                     padding: 0.5rem 0;
-                    border-bottom: 2px solid black;
+                    border-bottom: 2px solid #ff993e;
                 }
                 
-                .active a {
-                    color: red;
-                }
                 
                 `}</style>
            <Head>
