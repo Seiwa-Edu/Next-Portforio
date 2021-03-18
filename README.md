@@ -1,3 +1,28 @@
+自己紹介サイトの作成
+
+サービス概要
+今まで関わったサービスや作品をまとめることができる自己紹介サイトを作成しました。
+
+制作物
+WEBサイト(本サイト）
+
+使用技術
+React, Next.js, TypeScript, Vercel, Microcms(サイトをCMS化するために使用)
+
+勉強になった部分、苦戦した部分
+React Tutorial (公式)や Next js Tutorial (公式) は既に学習していましたが、実際ににオリジナルのサイトを作成した経験はなかったため、実装したい機能を考えながらサイト作成を行えたことは、非常に良い勉強になりました。
+今回は、TypeScript も使用しましたが、型付けに関してはまだまだ勉強不足なのでアウトプットの中で、試行錯誤を行っていきたいです。
+
+参考
+・Next js Tutorial
+https://nextjs.org/learn/basics/create-nextjs-app
+
+・microcms + Next js
+https://blog.microcms.io/microcms-next-jamstack-blog/
+
+・Type Script の導入
+https://github.com/vercel/next.js/tree/canary/examples/with-typescript
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -17,18 +42,3 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
