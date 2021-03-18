@@ -63,7 +63,7 @@ export default function Home() {
               <h3 className={style_css.programming_cate}>infrastructure</h3>
             </div>
             <div className={style_css.programming__comp}>
-              <div className={style_css.programming_image}><img src="/html_css.png" className={style_css.programming__Logo} alt="HTML Logo"/></div>
+              {/* <div className={style_css.programming_image}><img src="/html_css.png" className={style_css.programming__Logo} alt="HTML Logo"/></div> */}
               <div className={style_css.programming_text}>
                 <h4 className={style_css.programming__title} >AWS</h4>
                 <p className={style_css.programming__phrase}>クラウドプラクティショナー </p>
